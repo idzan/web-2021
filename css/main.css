@@ -38,16 +38,14 @@ main {
     width: 100%;
 }
 
-#services, #portfolio, #blog {
+.service-list {
     display: grid;
-    grid-template-rows: 5em auto;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1em;
 }
 
-#portfolio, #blog {
+.portfolio-grid, .blog-posts {
     display: grid;
-    grid-template-rows: 5em auto;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1em;
 }
