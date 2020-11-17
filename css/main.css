@@ -24,4 +24,30 @@
 html {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     scroll-behavior: smooth;
-  }
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.5em;
+    background: var(--white);
+    color: var(--dark-blue);
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#services, #portfolio, #blog {
+    display: grid;
+    grid-template-rows: 5em auto;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1em;
+}
+
+#portfolio, #blog {
+    display: grid;
+    grid-template-rows: 5em auto;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1em;
+}
