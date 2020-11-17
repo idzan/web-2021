@@ -20,3 +20,8 @@
     --viber: #59267c;
     --telegram: #0088cc;
 }
+
+html {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    scroll-behavior: smooth;
+  }
