@@ -1,1 +1,22 @@
 /* Styling for Marko Idzan's Web Site */
+
+:root {
+    /* Basic Site Colors */
+    --dark-blue: #2d3142;
+    --white: #eee;
+    --orange: #ef8354;
+    --green: #026928;
+    --red: #ba1e04;
+    /* Brand colors */
+    --facebook: #3b5998;
+    --twitter: #1da1f2;
+    --linkedin: #0077b5;
+    --instagram: #e1306c;
+    --youtube: #ff0000;
+    --github: #333;
+    --reddit: #ff4500;
+    --discord: #7289da;
+    --whatsapp: #075e54;
+    --viber: #59267c;
+    --telegram: #0088cc;
+}
