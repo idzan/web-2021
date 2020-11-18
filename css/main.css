@@ -21,11 +21,14 @@
     --telegram: #0088cc;
 }
 
+/*Default Fonts from Systems*/
+
 html {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     scroll-behavior: smooth;
 }
 
+/* Light Mode Setup */
 body {
     font-size: 1em;
     line-height: 1.5em;
@@ -33,6 +36,8 @@ body {
     color: var(--dark-blue);
 }
 
+
+/* Layout */
 main {
     margin: 0 auto;
     width: 100%;
