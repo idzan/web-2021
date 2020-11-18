@@ -43,6 +43,7 @@ main {
     width: 100%;
 }
 
+/* Grid layouts */
 .service-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
