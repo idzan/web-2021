@@ -61,7 +61,7 @@ main {
     gap: 1em;
 }
 
-/* Navigation */
+/* Navigation - Mobile First Version */
 .container {
     margin: 0 auto;
     position: relative;
@@ -150,8 +150,8 @@ header {
 }
 
 
-
-@media (min-width: 800px) {
+/* Desktop Styling of Navigation */
+@media (min-width: 720px) {
 
     .nav-toggle {
         display: none;
