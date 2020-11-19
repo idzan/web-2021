@@ -49,13 +49,13 @@ main {
 }
 
 /* Grid layouts */
-.service-list {
+.service__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1em;
 }
 
-.portfolio-grid, .blog-posts {
+.portfolio__grid, .blog__posts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1em;
@@ -63,10 +63,7 @@ main {
 
 /* Navigation */
 .container {
-    width: 80%;
-    max-width: 1100px;
     margin: 0 auto;
-    /* added for nav-toggle positioning */
     position: relative;
 }
 
