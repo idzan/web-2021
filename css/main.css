@@ -15,8 +15,6 @@
     --instagram: #e1306c;
     --youtube: #ff0000;
     --github: #333;
-    --reddit: #ff4500;
-    --discord: #7289da;
     --whatsapp: #075e54;
     --viber: #59267c;
     --telegram: #0088cc;
@@ -227,4 +225,41 @@ h1 .site__title--heading {
 
 .color__accent {
     color: var(--orange);
+}
+
+/* Svg icons Styling */
+.icon {
+    width: 1em;
+    height: 1em;
+}
+
+.icon__square {
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    margin: 0.25em;
+}
+
+.icon__fill {
+    fill: var(--white);
+}
+
+.icon__facebook {
+    background: var(--facebook);
+}
+
+.icon__twitter {
+    background: var(--twitter);
+}
+
+.icon__linkedin {
+    background: var(--linkedin);
+}
+
+.icon__instagram {
+    background: var(--instagram);
+}
+
+.icon__youtube {
+    background: var(--youtube);
 }
