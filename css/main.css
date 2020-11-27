@@ -144,6 +144,11 @@ img, picture {
     height: auto;
 }
 
+.img__svg {
+    width: 50%;
+    height: 50%;
+}
+
 /* Light Mode Setup */
 body {
     padding: 1rem;
@@ -181,7 +186,7 @@ main {
     height: auto;
 }
 
-#about h2 {
+#about h2, #services h2 {
     padding-bottom: 1.5rem;
 }
 
@@ -189,7 +194,8 @@ main {
 .service__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1em;
+    gap: 1.75rem;
+    align-items: stretch;
 }
 
 .portfolio__grid, .blog__posts {
