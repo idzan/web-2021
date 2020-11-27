@@ -144,10 +144,13 @@ img, picture {
     height: auto;
 }
 
+/* Images Sizing */
+
 .img__svg {
     width: 50%;
     height: 50%;
 }
+
 
 /* Light Mode Setup */
 body {
