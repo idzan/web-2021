@@ -139,9 +139,13 @@ p, span {
 
 /* Responsive images */
 img, picture {
-    width: 100%;
+    /* width: 100%; */
     max-width: 100%;
     height: auto;
+}
+
+img {
+    aspect-ratio: attr(width) / attr(height);
 }
 
 /* Images Sizing */
@@ -149,6 +153,11 @@ img, picture {
 .img__svg {
     width: 50%;
     height: 50%;
+}
+
+.img__thumbnail--portfolio {
+    width: 100%;
+    object-fit: contain;
 }
 
 
@@ -201,7 +210,13 @@ main {
     align-items: stretch;
 }
 
-.portfolio__grid, .blog__posts {
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5em;
+}
+
+.blog__posts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5em;
@@ -435,6 +450,12 @@ h1 .site__title--heading {
     .button__more {
         width: 15vw;
     }
+}
+
+/* Portfolio styling */
+.portfolio__grid .project__item {
+    padding-bottom: calc(0.66 * 100%);
+    display: block;
 }
 
 /* Svg icons Styling */
