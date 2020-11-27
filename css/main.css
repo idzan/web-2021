@@ -95,7 +95,7 @@
 :root {
     /* Basic Site Colors */
     --dark-blue: #2d3142;
-    --white: #eee;
+    --white: #fdfbfb;
     --orange: #ef8354;
     --green: #026928;
     --red: #ba1e04;
@@ -155,7 +155,7 @@ img {
     height: 50%;
 }
 
-.img__thumbnail--portfolio {
+.img__thumbnail--portfolio, .img__thumbnail--blog {
     width: 100%;
     object-fit: contain;
 }
