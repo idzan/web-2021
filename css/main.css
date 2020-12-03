@@ -133,8 +133,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
+
 p, span {
     font-family: 'Open Sans' ,sans-serif;
+}
+
+strong {
+    font-weight: 500;
 }
 
 /* Responsive images */
@@ -334,9 +339,10 @@ header {
 }
 
 
-/* Desktop Styling of Navigation */
+/* Desktop Styling of Navigation & Buttons */
 @media (min-width: 720px) {
 
+    /*navigation - desktop*/
     .nav-toggle {
         display: none;
     }
@@ -369,6 +375,23 @@ header {
         padding: 0 0.75em;
     }
 
+    /*buttons desktop*/
+    .button__about {
+        width: 20vw;
+    }
+
+    .button__download {
+        width: 25vw;
+    }
+
+    .button__more {
+        width: 15vw;
+    }
+
+    .button__load {
+        width: 10vw;
+    }
+
     .row {
         display: flex;
         justify-content: space-between;
@@ -388,6 +411,10 @@ header {
 
 h1 .site__title--heading {
     font-size: 2rem;
+    font-weight: 600;
+}
+
+#about h2, #blog h2, #contact h2 {
     font-weight: 600;
 }
 
@@ -452,24 +479,6 @@ h1 .site__title--heading {
     color: var(--white);
 }
 
-/* Desktop Sizing of Buttons*/
-@media (min-width: 720px) {
-    .button__about {
-        width: 20vw;
-    }
-
-    .button__download {
-        width: 25vw;
-    }
-
-    .button__more {
-        width: 15vw;
-    }
-
-    .button__load {
-        width: 10vw;
-    }
-}
 
 /* Portfolio styling */
 .project__item--details {
