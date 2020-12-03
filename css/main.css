@@ -155,7 +155,11 @@ img {
     height: 50%;
 }
 
-.img__thumbnail--portfolio, .img__thumbnail--blog {
+.img__thumbnail--portfolio {
+    object-fit: cover;
+}
+
+.img__thumbnail--blog {
     width: 100%;
     object-fit: contain;
 }
@@ -212,8 +216,13 @@ main {
 
 .portfolio__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 1.5em;
+}
+
+.project__item {
+    display: flex;
+    flex-direction: row;
 }
 
 .blog__posts {
@@ -463,10 +472,9 @@ h1 .site__title--heading {
 }
 
 /* Portfolio styling */
-/* .portfolio__grid .project__item {
-    padding-bottom: calc(0.66 * 100%);
-    display: block;
-} */
+.project__item--details {
+    margin-left: 1rem;
+}
 
 /* Svg icons Styling */
 .icon {
