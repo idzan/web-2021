@@ -163,7 +163,7 @@ img {
 
 /* Light Mode Setup */
 body {
-    padding: 1rem;
+    /* padding: 1rem; */
     font-size: 1em;
     line-height: 1.5em;
     background: var(--white);
@@ -437,6 +437,12 @@ h1 .site__title--heading {
     color: var(--white);
 }
 
+.button__load {
+    width: 20vw;
+    background: var(--gray);
+    color: var(--white);
+}
+
 /* Desktop Sizing of Buttons*/
 @media (min-width: 720px) {
     .button__about {
@@ -450,13 +456,17 @@ h1 .site__title--heading {
     .button__more {
         width: 15vw;
     }
+
+    .button__load {
+        width: 10vw;
+    }
 }
 
 /* Portfolio styling */
-.portfolio__grid .project__item {
+/* .portfolio__grid .project__item {
     padding-bottom: calc(0.66 * 100%);
     display: block;
-}
+} */
 
 /* Svg icons Styling */
 .icon {
