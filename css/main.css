@@ -221,8 +221,8 @@ main {
 
 .portfolio__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    gap: 1.5em;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    gap: 1rem;
 }
 
 .project__item {
