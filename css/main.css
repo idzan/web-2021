@@ -221,14 +221,14 @@ main {
 
 .portfolio__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     gap: 1rem;
 }
 
-.project__item {
+/* .project__item {
     display: flex;
     flex-direction: row;
-}
+} */
 
 .blog__posts {
     display: grid;
@@ -481,9 +481,9 @@ h1 .site__title--heading {
 
 
 /* Portfolio styling */
-.project__item--details {
+/* .project__item--details {
     margin-left: 1rem;
-}
+} */
 
 /* Svg icons Styling */
 .icon {
