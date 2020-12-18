@@ -1,6 +1,36 @@
 /* Styling for Marko Idzan's Web Site */
 
-/* Fonts */
+/**
+* Contents:
+* 1) Fonts
+* 2) Colors
+* 3) Reset
+* 4) Defaults
+* 5) Images
+* 6) Default (Light) Theme
+* 7) Layouts
+* 7.1) Defaults
+* 7.2) Global Sections
+* 7.3) Sections
+* 7.4) Grid
+* 7.5) Flex
+* 8) Navigation
+* 8.1) Mobile First
+* 8.2) Hamburger Icon
+* 8.3) Accessibility
+* 8.4) Menu Items
+* 9) Desktop Styling
+* 9.1) Defaults
+* 9.2) Navigation
+* 9.3) Buttons
+* 10) Typography
+* 11) Links
+* 12) Buttons - Mobile & Styling
+* 13) SVG Icons
+* 14)
+*/
+
+/* 1) Fonts */
 
 /* Open Sans */
 /* open-sans-regular - latin */
@@ -92,8 +122,8 @@
     font-display: swap;
 }
 
+/* 2) Colors */
 :root {
-    /* Basic Site Colors */
     --dark-blue: #2d3142;
     --white: #fdfbfb;
     --orange: #ef8354;
@@ -112,7 +142,7 @@
     --telegram: #0088cc;
 }
 
-/* Default reset */
+/* 3) Reset */
 * {
     overflow: initial;
 }
@@ -121,18 +151,26 @@
     box-sizing: border-box;
 }
 
-/*Default Fonts from Systems*/
+/* 4) Defaults */
+img, picture {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    aspect-ratio: attr(width) / attr(height);
+}
+
 html {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     scroll-behavior: smooth;
 }
 
-/* Include Fonts as Defaults */
+/* 4) Base Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
-
 
 p, span {
     font-family: 'Open Sans' ,sans-serif;
@@ -142,19 +180,7 @@ strong {
     font-weight: 500;
 }
 
-/* Responsive images */
-img, picture {
-    /* width: 100%; */
-    max-width: 100%;
-    height: auto;
-}
-
-img {
-    aspect-ratio: attr(width) / attr(height);
-}
-
-/* Images Sizing */
-
+/* 5) Images */
 .img__svg {
     width: 50%;
     height: 50%;
@@ -171,9 +197,8 @@ img {
 }
 
 
-/* Light Mode Setup */
+/* 6) Default (Light) Theme */
 body {
-    /* padding: 1rem; */
     font-size: 1em;
     line-height: 1.5em;
     background: var(--white);
@@ -181,29 +206,24 @@ body {
 }
 
 
-/* Layout */
+/* 7) Layouts */
+/* 7.1) Defaults */
 main {
     margin: 0 auto;
     width: 100%;
 }
 
-/* Global Sections Styling */
+.container {
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 7.2) Global Sections */
 #home, #about, #services, #portfolio, #blog, #contact {
     padding: 2rem;
 }
 
-/* Sections Styling */
-#home {
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#home h2 {
-    font-weight: 600;
-}
-
+/* 7.3) Sections */
 #about {
     height: auto;
 }
@@ -212,7 +232,7 @@ main {
     padding-bottom: 1.5rem;
 }
 
-/* Grid & Flex layouts */
+/* 7.4) Grid */
 .service__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -226,11 +246,18 @@ main {
     gap: 1rem;
 }
 
-
 .blog__posts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5em;
+}
+
+/* 7.5) Flex */
+#home {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer {
@@ -245,12 +272,8 @@ footer {
     gap: 1rem;
 }
 
-/* Navigation - Mobile First Version */
-.container {
-    margin: 0 auto;
-    position: relative;
-}
-
+/* 8) Navigation */
+/* 8.1) Mobile First */
 header {
     padding: 2rem;
     text-align: center;
@@ -282,7 +305,7 @@ header {
     opacity: .75;
 }
 
-/* Hamburger icon Styling */
+/* 8.2) Hamburger Icon */
 .hamburger {
     width: 50%;
     position: relative;
@@ -311,14 +334,14 @@ header {
     transform: translateY(3px);
 }
 
-/* Navigation Accessibility */
+/* 8.3) Accessibility */
 .nav--visible {
     visibility: visible;
     height: auto;
     position: relative;
 }
 
-/* Menu items Styling */
+/* 8.4) Menu Items */
 .nav__item {
     padding: 0.5em;
 }
@@ -336,10 +359,18 @@ header {
 }
 
 
-/* Desktop Styling of Navigation & Buttons */
+/* 9) Desktop Styling*/
 @media (min-width: 720px) {
 
-    /*navigation - desktop*/
+    /* 9.1) Defaults */
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    /* 9.2) Navigation*/
     .nav-toggle {
         display: none;
     }
@@ -372,7 +403,7 @@ header {
         padding: 0 0.75em;
     }
 
-    /*buttons desktop*/
+    /* 9.3) Buttons*/
     .button__about {
         width: 20vw;
     }
@@ -388,16 +419,13 @@ header {
     .button__load {
         width: 10vw;
     }
-
-    .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-    }
 }
 
-/* Font Styling */
+/* 10) Typography */
+#home h2 {
+    font-weight: 600;
+}
+
 .site__name {
     font-weight: 600;
 }
@@ -424,6 +452,7 @@ h1 .site__title--heading {
     font-weight: 400;
 }
 
+/* 11) Links */
 .link__external {
     color: var(--orange);
 }
@@ -440,7 +469,7 @@ h1 .site__title--heading {
     color: var(--orange);
 }
 
-/* Buttons and Styling */
+/* 12) Buttons - Mobile & Styling */
 .button {
     display: inline-block;
     padding: 1rem;
@@ -480,7 +509,7 @@ h1 .site__title--heading {
     color: var(--white);
 }
 
-/* Svg icons Styling */
+/* 13) SVG Icons */
 .icon {
     width: 1em;
     height: 1em;
