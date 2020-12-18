@@ -177,7 +177,7 @@ p, span {
 }
 
 strong {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* 5) Images */
@@ -196,6 +196,9 @@ strong {
     object-fit: contain;
 }
 
+.img__project {
+    max-width: 40vw;
+}
 
 /* 6) Default (Light) Theme */
 body {
@@ -232,6 +235,10 @@ main {
     padding-bottom: 1.5rem;
 }
 
+.project__description {
+    margin-top: 1rem;
+}
+
 /* 7.4) Grid */
 .service__list {
     display: grid;
@@ -253,6 +260,17 @@ main {
 }
 
 /* 7.5) Flex */
+.project__informations {
+    display: flex;
+    gap: 2rem;
+}
+
+.project__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #home {
     height: 75vh;
     display: flex;
@@ -416,7 +434,7 @@ header {
         width: 15vw;
     }
 
-    .button__load {
+    .button__return {
         width: 10vw;
     }
 }
@@ -503,7 +521,7 @@ h1 .site__title--heading {
     color: var(--white);
 }
 
-.button__load {
+.button__return {
     width: 20vw;
     background: var(--gray);
     color: var(--white);
@@ -513,6 +531,11 @@ h1 .site__title--heading {
 .icon {
     width: 1em;
     height: 1em;
+}
+
+.icon__small {
+    width: 0.75em;
+    height: 0.75em;
 }
 
 .icon__square {
