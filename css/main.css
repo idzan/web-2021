@@ -226,10 +226,6 @@ main {
     gap: 1rem;
 }
 
-/* .project__item {
-    display: flex;
-    flex-direction: row;
-} */
 
 .blog__posts {
     display: grid;
@@ -432,7 +428,11 @@ h1 .site__title--heading {
     color: var(--orange);
 }
 
-.link__external:hover, .link__external:focus {
+.link__internal {
+    color: var(--orange);
+}
+
+.link__external:hover, .link__external:focus, .link__internal:hover, .link__internal:focus {
     filter: brightness(80%);
 }
 
@@ -479,12 +479,6 @@ h1 .site__title--heading {
     background: var(--gray);
     color: var(--white);
 }
-
-
-/* Portfolio styling */
-/* .project__item--details {
-    margin-left: 1rem;
-} */
 
 /* Svg icons Styling */
 .icon {
