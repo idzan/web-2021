@@ -568,3 +568,14 @@ h1 .site__title--heading {
 .icon__youtube {
     background: var(--youtube);
 }
+
+/* Dark Mode */
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background: var(--dark-blue);
+        color: var(--white);
+    }
+    .nav__link {
+        color: var(--white);
+    }
+} */
