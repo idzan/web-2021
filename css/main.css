@@ -127,6 +127,7 @@
     --dark-blue: #2d3142;
     --white: #fdfbfb;
     --orange: #ef8354;
+    --deep-red: #982C03;
     --green: #026928;
     --red: #ba1e04;
     --gray: #4F5D75;
@@ -469,7 +470,7 @@ h1 .site__title--heading {
 
 /* 11) Links */
 .link__external, .link__internal {
-    color: var(--orange);
+    color: var(--deep-red);
 }
 
 .link__external:hover, .link__external:focus, .link__internal:hover, .link__internal:focus {
@@ -477,7 +478,7 @@ h1 .site__title--heading {
 }
 
 .color__accent {
-    color: var(--orange);
+    color: var(--deep-red);
 }
 
 /* 12) Buttons - Mobile & Styling */
@@ -497,7 +498,7 @@ h1 .site__title--heading {
 .button__about {
     margin-top: 1.75rem;
     width: 50vw;
-    background: var(--orange);
+    background: var(--deep-red);
     color: var(--white);
 }
 
@@ -510,7 +511,7 @@ h1 .site__title--heading {
 
 .button__more {
     width: 30vw;
-    background: var(--orange);
+    background: var(--deep-red);
     color: var(--white);
 }
 
