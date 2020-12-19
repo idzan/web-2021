@@ -157,10 +157,6 @@ img, picture {
     height: auto;
 }
 
-img {
-    aspect-ratio: attr(width) / attr(height);
-}
-
 html {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     scroll-behavior: smooth;
@@ -196,9 +192,9 @@ strong {
     object-fit: contain;
 }
 
-.img__project, .img__post {
+/* .img__project, .img__post {
     width: 40vw;
-}
+} */
 
 /* 6) Default (Light) Theme */
 body {
@@ -231,6 +227,10 @@ main {
     height: auto;
 }
 
+article, .project__details, .project__description {
+    padding: 0 2.5rem;
+}
+
 #about h2, #services h2 {
     padding-bottom: 1.5rem;
 }
@@ -260,16 +260,17 @@ main {
 }
 
 /* 7.5) Flex */
-.project__informations, .post__informations {
-    display: flex;
+.project__informations {
+    display: grid;
     gap: 2rem;
+    justify-content: center;
 }
 
-.project__title, .post__title {
+/* .project__title, .post__title {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 #home {
     height: 75vh;
