@@ -196,7 +196,7 @@ strong {
     object-fit: contain;
 }
 
-.img__project {
+.img__project, .img__post {
     max-width: 40vw;
 }
 
@@ -260,12 +260,12 @@ main {
 }
 
 /* 7.5) Flex */
-.project__informations {
+.project__informations, .post__informations {
     display: flex;
     gap: 2rem;
 }
 
-.project__title {
+.project__title, .post__title {
     display: flex;
     justify-content: center;
     align-items: center;
