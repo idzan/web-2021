@@ -259,16 +259,11 @@ main {
     gap: 1.5em;
 }
 
-.project__informations, .post__informations {
-    display: grid;
-    gap: 2rem;
-}
-
 /* 7.5) Flex */
-/* .project__informations, .post__informations {
+.project__informations, .post__informations {
     display: flex;
     gap: 2rem;
-} */
+}
 
 .project__title, .post__title {
     display: flex;
