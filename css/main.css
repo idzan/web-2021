@@ -192,9 +192,9 @@ strong {
     object-fit: contain;
 }
 
-/* .img__project, .img__post {
+.img__project {
     width: 40vw;
-} */
+}
 
 /* 6) Default (Light) Theme */
 body {
@@ -227,7 +227,7 @@ main {
     height: auto;
 }
 
-article, .project__details, .project__description {
+article, .post__details,.project__details, .project__description {
     padding: 0 2.5rem;
 }
 
@@ -456,6 +456,11 @@ header {
 h1 .site__title--heading {
     font-size: 2rem;
     font-weight: 600;
+}
+
+.post__title {
+    text-align: center;
+    padding: 0 1rem;
 }
 
 #about h2, #blog h2, #contact h2 {
