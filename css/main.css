@@ -564,7 +564,7 @@ h1 .site__title--heading {
 }
 
 /* 14) Dark Mode */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     body {
         background: var(--dark-blue);
         color: var(--white);
@@ -572,4 +572,10 @@ h1 .site__title--heading {
     .nav__link {
         color: var(--white);
     }
-} */
+    .link__external, .link__internal, .color__accent {
+        color: var(--orange);
+    }
+    .button__about, .button__more {
+        background: var(--orange);
+    }
+}
