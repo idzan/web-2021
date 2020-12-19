@@ -197,7 +197,7 @@ strong {
 }
 
 .img__project, .img__post {
-    max-width: 40vw;
+    width: 40vw;
 }
 
 /* 6) Default (Light) Theme */
