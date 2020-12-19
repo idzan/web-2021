@@ -187,11 +187,6 @@ strong {
     object-fit: cover;
 }
 
-.img__thumbnail--blog {
-    width: 100%;
-    object-fit: contain;
-}
-
 .img__project {
     width: 40vw;
 }
@@ -227,7 +222,7 @@ main {
     height: auto;
 }
 
-article, .post__details,.project__details, .project__description {
+article, .post__details,.project__details {
     padding: 0 2.5rem;
 }
 
@@ -236,6 +231,7 @@ article, .post__details,.project__details, .project__description {
 }
 
 .project__description {
+    padding: 0 2.5rem;
     margin-top: 1rem;
 }
 
@@ -259,18 +255,13 @@ article, .post__details,.project__details, .project__description {
     gap: 1.5em;
 }
 
-/* 7.5) Flex */
 .project__informations {
     display: grid;
     gap: 2rem;
     justify-content: center;
 }
 
-/* .project__title, .post__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+/* 7.5) Flex */
 
 #home {
     height: 75vh;
@@ -477,11 +468,7 @@ h1 .site__title--heading {
 }
 
 /* 11) Links */
-.link__external {
-    color: var(--orange);
-}
-
-.link__internal {
+.link__external, .link__internal {
     color: var(--orange);
 }
 
@@ -575,7 +562,7 @@ h1 .site__title--heading {
     background: var(--youtube);
 }
 
-/* Dark Mode */
+/* 14) Dark Mode */
 /* @media (prefers-color-scheme: dark) {
     body {
         background: var(--dark-blue);
