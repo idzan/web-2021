@@ -27,7 +27,8 @@
 * 11) Links
 * 12) Buttons - Mobile & Styling
 * 13) SVG Icons
-* 14)
+* 14) Dark Mode
+* 15) Accessibility
 */
 
 /* 1) Fonts */
@@ -579,3 +580,21 @@ h1 .site__title--heading {
         background: var(--orange);
     }
 }
+
+/* 15) Accessibility */
+.visually-hidden, .screen-reader {
+    display: block;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(1px);
+            clip-path: inset(1px);
+    white-space: nowrap;
+    position: absolute;
+  }
+  
+  .no-js .user-toggle {
+    display: none;
+  }
