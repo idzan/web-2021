@@ -10,3 +10,38 @@ p, span {
 strong {
     font-weight: 600;
 }
+
+#home h2 {
+    font-weight: 600;
+}
+
+.site__name {
+    font-weight: 600;
+}
+
+.site__title {
+    font-size: 1.5rem;
+}
+
+h1 .site__title--heading {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.post__title {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+#about h2, #blog h2, #contact h2 {
+    font-weight: 600;
+}
+
+.nav__item {
+    font-weight: 500;
+}
+
+.text__muted {
+    font-size: 0.8rem;
+    font-weight: 400;
+}

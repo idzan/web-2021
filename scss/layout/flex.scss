@@ -1,0 +1,32 @@
+.container {
+    margin: 0 auto;
+    position: relative;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+@media (min-width: 720px) {
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}

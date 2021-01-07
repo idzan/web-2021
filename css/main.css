@@ -239,7 +239,7 @@ main {
     height: auto;
 }
 
-article, .post__details,.project__details {
+article, .project__details {
     padding: 0 2.5rem;
 }
 
@@ -266,11 +266,6 @@ article, .post__details,.project__details {
     gap: 1rem;
 }
 
-.blog__posts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5em;
-}
 
 .project__informations {
     display: grid;
