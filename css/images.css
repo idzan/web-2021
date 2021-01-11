@@ -10,11 +10,11 @@
 }
 
 .img__project {
-  max-width: 40vw;
+  max-width: 95vw;
 }
 
 @media (min-width: 720px) {
   .img__project {
-    max-width: 80vw;
+    max-width: 40vw;
   }
 }
