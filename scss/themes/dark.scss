@@ -1,5 +1,72 @@
+@import "../utilities/colors.scss";
+@import "../utilities/icons.scss";
+
 @media (prefers-color-scheme: dark) {
     :root {
         --color-mode: "dark";
+
+        &:not([data-user-color-scheme]) {
+            --dark-blue: #{$dark-blue};
+            --white: #{$white};
+            --gray: #{$gray};
+            --orange: #{$orange};
+            --deep-red: #{$deep-red};
+            --green: #{$green};
+            --red: #{$red};
+
+            --background: var(--dark-blue);
+            --text: var(--white);
+            --hamburger: var(--white);
+            --menu-text: var(--white);
+            --link: var(--orange);
+
+            --switch-icon: $icon-moon;
+            --switch-icon-filter: $icon-moon-filter;
+
+            :focus {
+                outline: var(--white) solid 1px;
+            }
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+        }
+
+        .nav__link {
+            color: var(--menu-text);
+        }
+        
+        .link__external, .link__internal {
+            color: var(--link);
+        }
+        
+        .color__accent {
+            color: var(--orange);
+        }
+        
+        .button__about, .button__more {
+            background: var(--orange);
+        }
+
     }
+}
+
+[data-user-color-scheme="dark"] {
+    --dark-blue: #{$dark-blue};
+    --white: #{$white};
+    --gray: #{$gray};
+    --orange: #{$orange};
+    --deep-red: #{$deep-red};
+    --green: #{$green};
+    --red: #{$red};
+
+    --background: var(--dark-blue);
+    --text: var(--white);
+    --hamburger: var(--white);
+    --menu-text: var(--white);
+    --link: var(--orange);
+
+    --switch-icon: $icon-moon;
+    --switch-icon-filter: $icon-moon-filter;
 }

@@ -26,7 +26,6 @@ img, picture {
   height: auto;
 }
 
-/* 2.2) Brand colors */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -83,20 +82,11 @@ h1 .site__title--heading {
   font-size: 0.9rem;
 }
 
-.link__external, .link__internal {
-  color: #982C03;
-}
-
 .link__external:hover, .link__external:focus, .link__internal:hover, .link__internal:focus {
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
 }
 
-.color__accent {
-  color: #982C03;
-}
-
-/* 2.2) Brand colors */
 .button {
   display: inline-block;
   padding: 1rem;
@@ -114,7 +104,6 @@ h1 .site__title--heading {
 .button__about {
   margin-top: 1.75rem;
   width: 50vw;
-  background: #982C03;
   color: #fdfbfb;
 }
 
@@ -127,7 +116,6 @@ h1 .site__title--heading {
 
 .button__more {
   width: 40vw;
-  background: #982C03;
   color: #fdfbfb;
 }
 
@@ -381,14 +369,196 @@ header {
   padding: 0 2.5rem;
 }
 
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+.icon__small {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+.icon__square {
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  margin: 0.25em;
+}
+
+.icon__fill {
+  fill: #fdfbfb;
+}
+
+.icon__facebook {
+  background: #3b5998;
+}
+
+.icon__twitter {
+  background: #1da1f2;
+}
+
+.icon__linkedin {
+  background: #0077b5;
+}
+
+.icon__instagram {
+  background: #e1306c;
+}
+
+.icon__youtube {
+  background: #ff0000;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-mode: "dark";
   }
+  :root:not([data-user-color-scheme]) {
+    --dark-blue: #2d3142;
+    --white: #fdfbfb;
+    --gray: #4F5D75;
+    --orange: #ef8354;
+    --deep-red: #982C03;
+    --green: #026928;
+    --red: #ba1e04;
+    --background: var(--dark-blue);
+    --text: var(--white);
+    --hamburger: var(--white);
+    --menu-text: var(--white);
+    --link: var(--orange);
+    --switch-icon: $icon-moon;
+    --switch-icon-filter: $icon-moon-filter;
+  }
+  :root:not([data-user-color-scheme]) :focus {
+    outline: var(--white) solid 1px;
+  }
+  :root body {
+    background: var(--background);
+    color: var(--text);
+  }
+  :root .nav__link {
+    color: var(--menu-text);
+  }
+  :root .link__external, :root .link__internal {
+    color: var(--link);
+  }
+  :root .color__accent {
+    color: var(--orange);
+  }
+  :root .button__about, :root .button__more {
+    background: var(--orange);
+  }
+}
+
+[data-user-color-scheme="dark"] {
+  --dark-blue: #2d3142;
+  --white: #fdfbfb;
+  --gray: #4F5D75;
+  --orange: #ef8354;
+  --deep-red: #982C03;
+  --green: #026928;
+  --red: #ba1e04;
+  --background: var(--dark-blue);
+  --text: var(--white);
+  --hamburger: var(--white);
+  --menu-text: var(--white);
+  --link: var(--orange);
+  --switch-icon: $icon-moon;
+  --switch-icon-filter: $icon-moon-filter;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+.icon__small {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+.icon__square {
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  margin: 0.25em;
+}
+
+.icon__fill {
+  fill: #fdfbfb;
+}
+
+.icon__facebook {
+  background: #3b5998;
+}
+
+.icon__twitter {
+  background: #1da1f2;
+}
+
+.icon__linkedin {
+  background: #0077b5;
+}
+
+.icon__instagram {
+  background: #e1306c;
+}
+
+.icon__youtube {
+  background: #ff0000;
 }
 
 :root {
   --color-mode: "light";
+  --dark-blue: #2d3142;
+  --white: #fdfbfb;
+  --gray: #4F5D75;
+  --orange: #ef8354;
+  --deep-red: #982C03;
+  --green: #026928;
+  --red: #ba1e04;
+  --background: var(--white);
+  --text: var(--dark-blue);
+  --hamburger: var(--white);
+  --menu-text: var(--gray);
+  --link: var(--deep-red);
+  --switch-icon: $icon-sun;
+  --switch-icon-filter: $icon-sun-filter;
+}
+
+:root :focus {
+  outline: var(--dark-blue) solid 1px;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+.hamburger::before, .hamburger::after {
+  background: var(--hamburger);
+}
+
+.nav-toggle {
+  background: var(--gray);
+  color: var(--white);
+}
+
+.nav__link {
+  color: var(--menu-text);
+}
+
+.link__external, .link__internal {
+  color: var(--link);
+}
+
+.color__accent {
+  color: var(--deep-red);
+}
+
+.button__about, .button__more {
+  background: var(--deep-red);
 }
 
 .visually-hidden, .screen-reader {
@@ -408,7 +578,6 @@ header {
   display: none;
 }
 
-/* 2.2) Brand colors */
 /* Open Sans */
 /* open-sans-regular - latin */
 @font-face {
@@ -491,7 +660,6 @@ header {
   font-display: swap;
 }
 
-/* 2.2) Brand colors */
 .icon {
   width: 1em;
   height: 1em;

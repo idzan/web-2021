@@ -1,5 +1,98 @@
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+.icon__small {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+.icon__square {
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  margin: 0.25em;
+}
+
+.icon__fill {
+  fill: #fdfbfb;
+}
+
+.icon__facebook {
+  background: #3b5998;
+}
+
+.icon__twitter {
+  background: #1da1f2;
+}
+
+.icon__linkedin {
+  background: #0077b5;
+}
+
+.icon__instagram {
+  background: #e1306c;
+}
+
+.icon__youtube {
+  background: #ff0000;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-mode: "dark";
   }
+  :root:not([data-user-color-scheme]) {
+    --dark-blue: #2d3142;
+    --white: #fdfbfb;
+    --gray: #4F5D75;
+    --orange: #ef8354;
+    --deep-red: #982C03;
+    --green: #026928;
+    --red: #ba1e04;
+    --background: var(--dark-blue);
+    --text: var(--white);
+    --hamburger: var(--white);
+    --menu-text: var(--white);
+    --link: var(--orange);
+    --switch-icon: $icon-moon;
+    --switch-icon-filter: $icon-moon-filter;
+  }
+  :root:not([data-user-color-scheme]) :focus {
+    outline: var(--white) solid 1px;
+  }
+  :root body {
+    background: var(--background);
+    color: var(--text);
+  }
+  :root .nav__link {
+    color: var(--menu-text);
+  }
+  :root .link__external, :root .link__internal {
+    color: var(--link);
+  }
+  :root .color__accent {
+    color: var(--orange);
+  }
+  :root .button__about, :root .button__more {
+    background: var(--orange);
+  }
+}
+
+[data-user-color-scheme="dark"] {
+  --dark-blue: #2d3142;
+  --white: #fdfbfb;
+  --gray: #4F5D75;
+  --orange: #ef8354;
+  --deep-red: #982C03;
+  --green: #026928;
+  --red: #ba1e04;
+  --background: var(--dark-blue);
+  --text: var(--white);
+  --hamburger: var(--white);
+  --menu-text: var(--white);
+  --link: var(--orange);
+  --switch-icon: $icon-moon;
+  --switch-icon-filter: $icon-moon-filter;
 }

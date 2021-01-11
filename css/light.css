@@ -1,3 +1,92 @@
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+.icon__small {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+.icon__square {
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  margin: 0.25em;
+}
+
+.icon__fill {
+  fill: #fdfbfb;
+}
+
+.icon__facebook {
+  background: #3b5998;
+}
+
+.icon__twitter {
+  background: #1da1f2;
+}
+
+.icon__linkedin {
+  background: #0077b5;
+}
+
+.icon__instagram {
+  background: #e1306c;
+}
+
+.icon__youtube {
+  background: #ff0000;
+}
+
 :root {
   --color-mode: "light";
+  --dark-blue: #2d3142;
+  --white: #fdfbfb;
+  --gray: #4F5D75;
+  --orange: #ef8354;
+  --deep-red: #982C03;
+  --green: #026928;
+  --red: #ba1e04;
+  --background: var(--white);
+  --text: var(--dark-blue);
+  --hamburger: var(--white);
+  --menu-text: var(--gray);
+  --link: var(--deep-red);
+  --switch-icon: $icon-sun;
+  --switch-icon-filter: $icon-sun-filter;
+}
+
+:root :focus {
+  outline: var(--dark-blue) solid 1px;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+.hamburger::before, .hamburger::after {
+  background: var(--hamburger);
+}
+
+.nav-toggle {
+  background: var(--gray);
+  color: var(--white);
+}
+
+.nav__link {
+  color: var(--menu-text);
+}
+
+.link__external, .link__internal {
+  color: var(--link);
+}
+
+.color__accent {
+  color: var(--deep-red);
+}
+
+.button__about, .button__more {
+  background: var(--deep-red);
 }

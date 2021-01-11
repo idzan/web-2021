@@ -1,4 +1,3 @@
-/* 2.2) Brand colors */
 .button {
   display: inline-block;
   padding: 1rem;
@@ -16,7 +15,6 @@
 .button__about {
   margin-top: 1.75rem;
   width: 50vw;
-  background: #982C03;
   color: #fdfbfb;
 }
 
@@ -29,7 +27,6 @@
 
 .button__more {
   width: 40vw;
-  background: #982C03;
   color: #fdfbfb;
 }
 

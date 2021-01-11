@@ -1,3 +1,59 @@
+@import "../utilities/colors.scss";
+@import "../utilities/icons.scss";
+
 :root {
-    --color-mode: "light";
+    --color-mode: "light"; 
+
+    --dark-blue: #{$dark-blue};
+    --white: #{$white};
+    --gray: #{$gray};
+    --orange: #{$orange};
+    --deep-red: #{$deep-red};
+    --green: #{$green};
+    --red: #{$red};
+
+    --background: var(--white);
+    --text: var(--dark-blue);
+    --hamburger: var(--white);
+    --menu-text: var(--gray);
+    --link: var(--deep-red);
+
+    --switch-icon: $icon-sun;
+    --switch-icon-filter: $icon-sun-filter;
+
+    :focus {
+        outline: var(--dark-blue) solid 1px;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+.hamburger {
+    &::before, &::after {
+        background: var(--hamburger);
+    }
+}
+
+.nav-toggle {
+    background: var(--gray);
+    color: var(--white);
+}
+
+.nav__link {
+    color: var(--menu-text);
+}
+
+.link__external, .link__internal {
+    color: var(--link);
+}
+
+.color__accent {
+    color: var(--deep-red);
+}
+
+.button__about, .button__more {
+    background: var(--deep-red);
 }
