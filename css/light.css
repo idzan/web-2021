@@ -61,6 +61,16 @@
   outline: var(--dark-blue) solid 1px;
 }
 
+::-moz-selection {
+  background: var(--deep-red);
+  color: var(--text);
+}
+
+::selection {
+  background: var(--deep-red);
+  color: var(--text);
+}
+
 body {
   background: var(--background);
   color: var(--text);

@@ -33,6 +33,11 @@
             color: var(--text);
         }
 
+        ::selection {
+            background: var(--orange);
+            color: var(--text);
+        }
+
         .nav__link {
             color: var(--menu-text);
         }

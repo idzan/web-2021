@@ -66,6 +66,14 @@
     background: var(--background);
     color: var(--text);
   }
+  :root ::-moz-selection {
+    background: var(--orange);
+    color: var(--text);
+  }
+  :root ::selection {
+    background: var(--orange);
+    color: var(--text);
+  }
   :root .nav__link {
     color: var(--menu-text);
   }

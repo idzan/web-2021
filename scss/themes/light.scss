@@ -26,6 +26,11 @@
     }
 }
 
+::selection {
+    background: var(--deep-red);
+    color: var(--text);
+}
+
 body {
     background: var(--background);
     color: var(--text);
