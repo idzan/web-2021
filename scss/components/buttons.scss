@@ -1,3 +1,5 @@
+@import "../utilities/colors.scss";
+
 .button {
     display: inline-block;
     padding: 1rem;
@@ -14,27 +16,27 @@
 .button__about {
     margin-top: 1.75rem;
     width: 50vw;
-    background: var(--deep-red);
-    color: var(--white);
+    background: $deep-red;
+    color: $white;
 }
 
 .button__download {
     margin-top: 2rem;
     width: 50vw;
-    background: var(--gray);
-    color: var(--white);
+    background: $gray;
+    color: $white;
 }
 
 .button__more {
     width: 30vw;
-    background: var(--deep-red);
-    color: var(--white);
+    background: $deep-red;
+    color: $white;
 }
 
 .button__return {
     width: 20vw;
-    background: var(--gray);
-    color: var(--white);
+    background: $gray;
+    color: $white;
 }
 
 @media (min-width: 720px) {

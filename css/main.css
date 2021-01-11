@@ -231,7 +231,7 @@ main {
 
 /* 7.2) Global Sections */
 #home, #about, #services, #portfolio, #blog, #contact {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /* 7.3) Sections */
@@ -440,6 +440,11 @@ header {
 
     .button__return {
         width: 10vw;
+    }
+
+    /*Image*/
+    .img__project {
+        max-width: 80vw;
     }
 }
 

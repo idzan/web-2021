@@ -1,3 +1,5 @@
+@import "../utilities/colors.scss";
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -44,4 +46,24 @@ h1 .site__title--heading {
 .text__muted {
     font-size: 0.8rem;
     font-weight: 400;
+}
+
+.section__title {
+    max-width: 75vh;
+}
+
+.project__item--title {
+    font-size: 0.9rem;
+}
+
+.link__external, .link__internal {
+    color: $deep-red;
+}
+
+.link__external:hover, .link__external:focus, .link__internal:hover, .link__internal:focus {
+    filter: brightness(80%);
+}
+
+.color__accent {
+    color: $deep-red;
 }
