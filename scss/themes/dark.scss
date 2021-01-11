@@ -19,6 +19,7 @@
             --hamburger: var(--white);
             --menu-text: var(--white);
             --link: var(--orange);
+            --button: var(--orange);
 
             --switch-icon: $icon-moon;
             --switch-icon-filter: $icon-moon-filter;
@@ -51,7 +52,7 @@
         }
         
         .button__about, .button__more {
-            background: var(--orange);
+            background: var(--button);
         }
 
     }

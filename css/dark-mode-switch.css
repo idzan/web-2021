@@ -1,0 +1,36 @@
+.user-toggle {
+  margin: 1em auto 0 auto;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.toggle-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: var(--button);
+  border: none;
+  padding: 1em;
+  -webkit-transition: background 500ms ease-in-out, color 200ms ease;
+  transition: background 500ms ease-in-out, color 200ms ease;
+}
+
+.toggle-button :focus {
+  outline: 1px solid var(--button);
+  outline-offset: 0.5em;
+}
+
+.toggle-button__icon {
+  background: var(--switch-icon);
+  width: 1em;
+  height: 1em;
+  margin: 0 0 0 0.5em;
+  -webkit-filter: var(--switch-icon-filter);
+          filter: var(--switch-icon-filter);
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-transition: -webkit-filter 500ms ease-in-out;
+  transition: -webkit-filter 500ms ease-in-out;
+  transition: filter 500ms ease-in-out;
+  transition: filter 500ms ease-in-out, -webkit-filter 500ms ease-in-out;
+}

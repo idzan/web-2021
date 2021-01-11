@@ -17,6 +17,7 @@
     --hamburger: var(--white);
     --menu-text: var(--gray);
     --link: var(--deep-red);
+    --button: var(--deep-red);
 
     --switch-icon: $icon-sun;
     --switch-icon-filter: $icon-sun-filter;
@@ -60,5 +61,5 @@ body {
 }
 
 .button__about, .button__more {
-    background: var(--deep-red);
+    background: var(--button);
 }
