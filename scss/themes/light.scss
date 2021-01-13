@@ -21,6 +21,7 @@
     --button-text: var(--white);
     --accent: var(--deep-red);
     --focus: var(--dark-blue);
+    --icon-fill: var(--dark-blue);
 
     --switch-icon: #{$icon-sun};
     --switch-icon-filter: #{$icon-sun-filter};
@@ -66,4 +67,8 @@ body {
 .button__about, .button__more {
     background: var(--button);
     color: var(--button-text);
+}
+
+.icon__fill--contact {
+    fill: var(--icon-fill);
 }

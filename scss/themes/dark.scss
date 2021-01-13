@@ -23,6 +23,7 @@
             --button-text: var(--white);
             --accent: var(--orange);
             --focus: var(--white);
+            --icon-fill: var(--white);
 
             --switch-icon: #{$icon-moon};
             --switch-icon-filter: #{$icon-moon-filter};
@@ -59,6 +60,10 @@
             color: var(--button-text);
         }
 
+        .icon__fill--contact {
+            fill: var(--icon-fill);
+        }
+
     }
 }
 
@@ -79,6 +84,8 @@
     --button: var(--orange);
     --button-text: var(--white);
     --accent: var(--orange);
+    --focus: var(--white);
+    --icon-fill: var(--white);
 
     --switch-icon: #{$icon-moon};
     --switch-icon-filter: #{$icon-moon-filter};
