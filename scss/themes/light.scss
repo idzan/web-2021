@@ -20,12 +20,13 @@
     --button: var(--deep-red);
     --button-text: var(--white);
     --accent: var(--deep-red);
+    --focus: var(--dark-blue);
 
     --switch-icon: #{$icon-sun};
     --switch-icon-filter: #{$icon-sun-filter};
 
     :focus {
-        outline: var(--dark-blue) solid 1px;
+        outline: var(--focus) solid 1px;
     }
 }
 
