@@ -9,6 +9,7 @@
   display: -ms-inline-flexbox;
   display: inline-flex;
   background: var(--button);
+  color: var(--button-text);
   border: none;
   padding: 1em;
   -webkit-transition: background 500ms ease-in-out, color 200ms ease;
@@ -22,6 +23,7 @@
 
 .toggle-button__icon {
   background: var(--switch-icon);
+  color: var(--button-text);
   width: 1em;
   height: 1em;
   margin: 0 0 0 0.5em;

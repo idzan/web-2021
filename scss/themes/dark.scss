@@ -20,9 +20,11 @@
             --menu-text: var(--white);
             --link: var(--orange);
             --button: var(--orange);
+            --button-text: var(--white);
+            --accent: var(--orange);
 
-            --switch-icon: $icon-moon;
-            --switch-icon-filter: $icon-moon-filter;
+            --switch-icon: #{$icon-moon};
+            --switch-icon-filter: #{$icon-moon-filter};
 
             :focus {
                 outline: var(--white) solid 1px;
@@ -35,7 +37,7 @@
         }
 
         ::selection {
-            background: var(--orange);
+            background: var(--accent);
             color: var(--text);
         }
 
@@ -48,11 +50,12 @@
         }
         
         .color__accent {
-            color: var(--orange);
+            color: var(--accent);
         }
         
         .button__about, .button__more {
             background: var(--button);
+            color: var(--button-text);
         }
 
     }
@@ -72,7 +75,10 @@
     --hamburger: var(--white);
     --menu-text: var(--white);
     --link: var(--orange);
+    --button: var(--orange);
+    --button-text: var(--white);
+    --accent: var(--orange);
 
-    --switch-icon: $icon-moon;
-    --switch-icon-filter: $icon-moon-filter;
+    --switch-icon: #{$icon-moon};
+    --switch-icon-filter: #{$icon-moon-filter};
 }

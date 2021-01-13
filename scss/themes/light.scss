@@ -18,9 +18,11 @@
     --menu-text: var(--gray);
     --link: var(--deep-red);
     --button: var(--deep-red);
+    --button-text: var(--white);
+    --accent: var(--deep-red);
 
-    --switch-icon: $icon-sun;
-    --switch-icon-filter: $icon-sun-filter;
+    --switch-icon: #{$icon-sun};
+    --switch-icon-filter: #{$icon-sun-filter};
 
     :focus {
         outline: var(--dark-blue) solid 1px;
@@ -28,7 +30,7 @@
 }
 
 ::selection {
-    background: var(--deep-red);
+    background: var(--accent);
     color: var(--text);
 }
 
@@ -57,9 +59,10 @@ body {
 }
 
 .color__accent {
-    color: var(--deep-red);
+    color: var(--accent);
 }
 
 .button__about, .button__more {
     background: var(--button);
+    color: var(--button-text);
 }
