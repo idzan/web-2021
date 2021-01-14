@@ -57,3 +57,8 @@ h1 .site__title--heading {
 .link__external:hover, .link__external:focus, .link__internal:hover, .link__internal:focus {
     filter: brightness(80%);
 }
+
+.copyright__text {
+    text-align: center;
+    margin-top: 1rem;
+}

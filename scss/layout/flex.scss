@@ -9,12 +9,6 @@
     justify-content: center;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-}
-
 .social__icons {
     display: flex;
     justify-content: flex-start;
@@ -28,5 +22,11 @@ footer {
         justify-content: space-between;
         align-items: center;
 
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
     }
 }

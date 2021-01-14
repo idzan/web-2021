@@ -58,3 +58,8 @@ h1 .site__title--heading {
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
 }
+
+.copyright__text {
+  text-align: center;
+  margin-top: 1rem;
+}
