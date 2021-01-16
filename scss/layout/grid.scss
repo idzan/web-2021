@@ -21,8 +21,12 @@
     display: grid;
 }
 
-footer {
-    display: grid;
-    justify-content: space-evenly;
-    padding: 2rem;
+@media (max-width: 720px) {
+
+    footer {
+        display: grid;
+        justify-content: space-evenly;
+        padding: 2rem;
+    }
+
 }

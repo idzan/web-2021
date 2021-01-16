@@ -31,11 +31,13 @@
   display: grid;
 }
 
-footer {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 2rem;
+@media (max-width: 720px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 2rem;
+  }
 }
