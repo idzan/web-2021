@@ -25,8 +25,8 @@
             --focus: var(--white);
             --icon-fill: var(--white);
 
-            --switch-icon: #{$icon-moon};
-            --switch-icon-filter: #{$icon-moon-filter};
+            --switch-icon: #{$icon-sun};
+            --switch-icon-filter: #{$icon-sun-filter};
 
             :focus {
                 outline: var(--focus) solid 1px;
@@ -87,6 +87,6 @@
     --focus: var(--white);
     --icon-fill: var(--white);
 
-    --switch-icon: #{$icon-moon};
-    --switch-icon-filter: #{$icon-moon-filter};
+    --switch-icon: #{$icon-sun};
+    --switch-icon-filter: #{$icon-sun-filter};
 }

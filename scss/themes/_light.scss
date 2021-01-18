@@ -23,8 +23,8 @@
     --focus: var(--dark-blue);
     --icon-fill: var(--dark-blue);
 
-    --switch-icon: #{$icon-sun};
-    --switch-icon-filter: #{$icon-sun-filter};
+    --switch-icon: #{$icon-moon};
+    --switch-icon-filter: #{$icon-moon-filter};
 
     :focus {
         outline: var(--focus) solid 1px;
