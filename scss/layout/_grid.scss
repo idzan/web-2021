@@ -5,6 +5,11 @@
     align-items: stretch;
 }
 
+.service__item {
+    display: grid;
+    justify-items: center;
+  }
+
 .portfolio__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));

@@ -378,6 +378,12 @@ footer {
           align-items: stretch;
 }
 
+.service__item {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
 .portfolio__grid {
   display: -ms-grid;
   display: grid;
