@@ -245,13 +245,15 @@ h1 .site__title--heading {
 
 .img__svg {
   width: 50%;
-  height: 50%;
+  /* height: 50%; */
+  aspect-ratio: 16 / 9;
 }
 
 .img__thumbnail--portfolio {
-  max-width: 75vw;
+  /* max-width: 75vw; */
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 
 .img__project {
