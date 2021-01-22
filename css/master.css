@@ -111,7 +111,7 @@ body {
 }
 
 main {
-  padding: 1rem;
+  margin: 2rem;
 }
 
 img, picture {
@@ -372,10 +372,13 @@ footer {
   display: grid;
   -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1.75rem;
+  gap: 2rem;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .service__item {
@@ -389,7 +392,10 @@ footer {
   display: grid;
   -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1rem;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project__informations {
