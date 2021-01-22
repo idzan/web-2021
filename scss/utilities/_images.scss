@@ -1,11 +1,9 @@
 .img__svg {
     width: 50%;
-    /* height: 50%; */
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
 }
 
 .img__thumbnail--portfolio {
-    /* max-width: 75vw; */
     object-fit: cover;
     aspect-ratio: 16 / 9;
 }
