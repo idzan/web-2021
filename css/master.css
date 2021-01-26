@@ -442,8 +442,6 @@ header {
   height: 3em;
   padding: 0em;
   border-radius: 50%;
-  background: var(--gray);
-  color: var(--white);
   -webkit-transition: opacity 250ms ease;
   transition: opacity 250ms ease;
   position: absolute;
@@ -634,6 +632,8 @@ header {
   --text: var(--dark-blue);
   --header: var(--darker-white);
   --hamburger: var(--white);
+  --nav-toggle: var(--gray);
+  --nav-toggle-text: var(--white);
   --menu-text: var(--gray);
   --link: var(--deep-red);
   --button: var(--deep-red);
@@ -676,8 +676,8 @@ header {
 }
 
 .nav-toggle {
-  background: var(--gray);
-  color: var(--white);
+  background: var(--nav-toggle);
+  color: var(--nav-toggle-text);
 }
 
 .nav__link {
@@ -753,6 +753,7 @@ header {
   :root:not([data-user-color-scheme]) {
     --dark-blue: #2d3142;
     --white: #fdfbfb;
+    --darker-white: #eeecec;
     --gray: #4F5D75;
     --orange: #ef8354;
     --deep-red: #982C03;
@@ -762,6 +763,8 @@ header {
     --text: var(--white);
     --header: var(--gray);
     --hamburger: var(--white);
+    --nav-toggle: var(--darker-white);
+    --nav-toggle-text: var(--gray);
     --menu-text: var(--white);
     --link: var(--orange);
     --button: var(--orange);
@@ -796,6 +799,10 @@ header {
   :root .nav__link {
     color: var(--menu-text);
   }
+  :root .nav-toggle {
+    background: var(--nav-toggle);
+    color: var(--nav-toggle-text);
+  }
   :root .link__external, :root .link__internal {
     color: var(--link);
   }
@@ -817,6 +824,7 @@ header {
 [data-user-color-scheme="dark"] {
   --dark-blue: #2d3142;
   --white: #fdfbfb;
+  --darker-white: #eeecec;
   --gray: #4F5D75;
   --orange: #ef8354;
   --deep-red: #982C03;
@@ -826,6 +834,8 @@ header {
   --text: var(--white);
   --header: var(--gray);
   --hamburger: var(--white);
+  --nav-toggle: var(--darker-white);
+  --nav-toggle-text: var(--gray);
   --menu-text: var(--white);
   --link: var(--orange);
   --button: var(--orange);

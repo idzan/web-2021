@@ -8,6 +8,7 @@
         &:not([data-user-color-scheme]) {
             --dark-blue: #{$dark-blue};
             --white: #{$white};
+            --darker-white: #{$darker-white};
             --gray: #{$gray};
             --orange: #{$orange};
             --deep-red: #{$deep-red};
@@ -18,6 +19,8 @@
             --text: var(--white);
             --header: var(--gray);
             --hamburger: var(--white);
+            --nav-toggle: var(--darker-white);
+            --nav-toggle-text: var(--gray);
             --menu-text: var(--white);
             --link: var(--orange);
             --button: var(--orange);
@@ -54,6 +57,11 @@
         .nav__link {
             color: var(--menu-text);
         }
+
+        .nav-toggle {
+            background: var(--nav-toggle);
+            color: var(--nav-toggle-text);
+        }
         
         .link__external, .link__internal {
             color: var(--link);
@@ -82,6 +90,7 @@
 [data-user-color-scheme="dark"] {
     --dark-blue: #{$dark-blue};
     --white: #{$white};
+    --darker-white: #{$darker-white};
     --gray: #{$gray};
     --orange: #{$orange};
     --deep-red: #{$deep-red};
@@ -92,6 +101,8 @@
     --text: var(--white);
     --header: var(--gray);
     --hamburger: var(--white);
+    --nav-toggle: var(--darker-white);
+    --nav-toggle-text: var(--gray);
     --menu-text: var(--white);
     --link: var(--orange);
     --button: var(--orange);

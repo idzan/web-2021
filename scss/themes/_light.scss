@@ -17,6 +17,8 @@
     --text: var(--dark-blue);
     --header: var(--darker-white);
     --hamburger: var(--white);
+    --nav-toggle: var(--gray);
+    --nav-toggle-text: var(--white);
     --menu-text: var(--gray);
     --link: var(--deep-red);
     --button: var(--deep-red);
@@ -57,8 +59,8 @@ header {
 }
 
 .nav-toggle {
-    background: var(--gray);
-    color: var(--white);
+    background: var(--nav-toggle);
+    color: var(--nav-toggle-text);
 }
 
 .nav__link {
