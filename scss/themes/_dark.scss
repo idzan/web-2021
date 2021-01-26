@@ -27,6 +27,7 @@
             --selection: var(--orange);
             --selection-text: var(--white);
             --icon-fill: var(--white);
+            --top: var(--gray);
 
             --switch-icon: #{$icon-sun};
             --switch-icon-filter: #{$icon-sun-filter};
@@ -67,8 +68,12 @@
             color: var(--button-text);
         }
 
-        .icon__fill--contact, .icon__fill--project {
+        .icon__fill--contact, .icon__fill--project, .icon__fill--top {
             fill: var(--icon-fill);
+        }
+
+        .top {
+            background: var(--top);
         }
 
     }
@@ -96,6 +101,7 @@
     --selection: var(--orange);
     --selection-text: var(--white);
     --icon-fill: var(--white);
+    --top: var(--gray);
 
     --switch-icon: #{$icon-sun};
     --switch-icon-filter: #{$icon-sun-filter};

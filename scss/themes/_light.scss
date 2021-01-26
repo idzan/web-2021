@@ -26,6 +26,7 @@
     --selection: var(--dark-blue);
     --selection-text: var(--white);
     --icon-fill: var(--dark-blue);
+    --top: var(--darker-white);
 
     --switch-icon: #{$icon-moon};
     --switch-icon-filter: #{$icon-moon-filter};
@@ -77,6 +78,10 @@ header {
     color: var(--button-text);
 }
 
-.icon__fill--contact, .icon__fill--project {
+.icon__fill--contact, .icon__fill--project, .icon__fill--top {
     fill: var(--icon-fill);
+}
+
+.top {
+    background: var(--top);
 }
