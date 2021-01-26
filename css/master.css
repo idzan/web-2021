@@ -182,7 +182,13 @@ h1 .site__title--heading {
 
 .copyright__text {
   text-align: center;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+}
+
+@media (max-width: 720px) {
+  .copyright__text {
+    margin-top: 1rem;
+  }
 }
 
 .visually-hidden, .screen-reader {
@@ -337,20 +343,10 @@ h1 .site__title--heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: .25rem;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 2rem;
 }
 
 @media (min-width: 720px) {
@@ -365,6 +361,25 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .social__icons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
 }
 
 .service__list {
@@ -410,17 +425,6 @@ footer {
 .project__item {
   display: -ms-grid;
   display: grid;
-}
-
-@media (max-width: 720px) {
-  footer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    padding: 2rem;
-  }
 }
 
 header {
@@ -853,8 +857,8 @@ header {
 }
 
 .user-toggle {
-  margin: 1em auto 0 auto;
-  padding-top: 1em;
+  /* margin: 1em auto 0 auto;
+    padding-top: 1em; */
   text-align: center;
 }
 
@@ -889,6 +893,13 @@ header {
   transition: -webkit-filter 500ms ease-in-out;
   transition: filter 500ms ease-in-out;
   transition: filter 500ms ease-in-out, -webkit-filter 500ms ease-in-out;
+}
+
+@media (max-width: 720px) {
+  .user-toggle {
+    margin: 1em auto 0 auto;
+    padding-top: 1em;
+  }
 }
 
 .top {

@@ -60,5 +60,11 @@ h1 .site__title--heading {
 
 .copyright__text {
     text-align: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+}
+
+@media (max-width: 720px) {
+    .copyright__text {
+        margin-top: 1rem;
+    }
 }
