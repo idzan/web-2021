@@ -16,6 +16,7 @@
 
             --background: var(--dark-blue);
             --text: var(--white);
+            --header: var(--gray);
             --hamburger: var(--white);
             --menu-text: var(--white);
             --link: var(--orange);
@@ -23,6 +24,8 @@
             --button-text: var(--white);
             --accent: var(--orange);
             --focus: var(--white);
+            --selection: var(--orange);
+            --selection-text: var(--white);
             --icon-fill: var(--white);
 
             --switch-icon: #{$icon-sun};
@@ -38,9 +41,13 @@
             color: var(--text);
         }
 
+        header {
+            background: var(--header);
+        }
+
         ::selection {
-            background: var(--accent);
-            color: var(--text);
+            background: var(--selection);
+            color: var(--selection-text);
         }
 
         .nav__link {
@@ -78,6 +85,7 @@
 
     --background: var(--dark-blue);
     --text: var(--white);
+    --header: var(--gray);
     --hamburger: var(--white);
     --menu-text: var(--white);
     --link: var(--orange);
@@ -85,6 +93,8 @@
     --button-text: var(--white);
     --accent: var(--orange);
     --focus: var(--white);
+    --selection: var(--orange);
+    --selection-text: var(--white);
     --icon-fill: var(--white);
 
     --switch-icon: #{$icon-sun};
