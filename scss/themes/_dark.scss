@@ -18,7 +18,7 @@
             --background: var(--dark-blue);
             --text: var(--white);
             --header: var(--gray);
-            --hamburger: var(--white);
+            --hamburger: var(--gray);
             --nav-toggle: var(--darker-white);
             --nav-toggle-text: var(--gray);
             --menu-text: var(--white);
@@ -52,6 +52,10 @@
         ::selection {
             background: var(--selection);
             color: var(--selection-text);
+        }
+
+        .hamburger, .hamburger::before, .hamburger::after {
+            background: var(--hamburger);
         }
 
         .nav__link {
@@ -100,7 +104,7 @@
     --background: var(--dark-blue);
     --text: var(--white);
     --header: var(--gray);
-    --hamburger: var(--white);
+    --hamburger: var(--gray);
     --nav-toggle: var(--darker-white);
     --nav-toggle-text: var(--gray);
     --menu-text: var(--white);

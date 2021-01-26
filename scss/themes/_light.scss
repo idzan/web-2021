@@ -52,10 +52,8 @@ header {
     background: var(--header);
 }
 
-.hamburger {
-    &::before, &::after {
+.hamburger, .hamburger::before, .hamburger::after {
         background: var(--hamburger);
-    }
 }
 
 .nav-toggle {
