@@ -185,8 +185,12 @@ h1 .site__title--heading {
   /* margin-top: 1rem; */
 }
 
+.gdpr__links {
+  text-align: center;
+}
+
 @media (max-width: 720px) {
-  .copyright__text {
+  .copyright__text, .gdpr__links {
     margin-top: 1rem;
   }
 }
