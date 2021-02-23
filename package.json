@@ -1,0 +1,23 @@
+{
+  "name": "web-2021",
+  "version": "1.0.0",
+  "description": "This is my personal refresh of site, built for 2021 without any CMS for it. Not even Site Generator can't do what I do with my own code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idzan/web-2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idzan/web-2021/issues"
+  },
+  "homepage": "https://github.com/idzan/web-2021#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.8"
+  }
+}
